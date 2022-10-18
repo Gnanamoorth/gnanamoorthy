@@ -1,0 +1,64 @@
+body{
+    background-color: dimgray;
+    background-image: url(1images.jpeg);
+    background-size: cover;
+    
+}
+.zero{
+    color: rgba(255, 0, 170, 0.726);
+    font-size: 20px;
+    border: 4px outset;
+    border-left-color: rgb(204, 134, 48);
+    border-right-color: #cc8630;
+    border-block-color: green;
+    width: 50%;
+   
+    
+    
+
+}
+.mini{
+    display: flex;
+    padding:30px 30px 45px 50px ;
+    margin-top: 59px;
+    border: 5px dashed;
+    border-color:  green yellow orange brown;
+    width: 90%;  
+    font-family: 'Courier New', Courier, monospace;
+    
+
+   
+}
+.two{
+    width: 150px;
+    line-height: 1.6;
+    font-size: 0.6rem;
+    margin-left: 20px;
+    background-color: papayawhip;
+
+}
+.three{
+    width: 150px;
+    line-height: 1.6;
+    font-size: 0.6rem;
+    margin-left: 20px;
+    background-color: aquamarine;
+    
+}
+.one{
+    width: 150px;
+    line-height: 1.6;
+    font-size: 0.6rem;
+    background-color: skyblue;
+}
+
+#different{
+    color: chartreuse;
+}
+
+.side>h2{
+    border: 2px dotted ;
+    width: 40%;
+    font-size: 1.5rem;
+    
+}

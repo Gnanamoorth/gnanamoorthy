@@ -1,0 +1,19 @@
+nav h2 {
+  color: red;
+}
+nav ul {
+  border: 2px outset green;
+  text-align: right;
+  border-radius: 25px;
+  width: auto;
+  height: 50px;
+  border-bottom: 2px dotted red;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 25px 25px;
+}/*# sourceMappingURL=g.css.map */
