@@ -1,0 +1,28 @@
+.relative {
+    border: 2px solid green;
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 80px;
+    position: relative;
+    color: white;
+
+}
+
+.absolute {
+    border: 2px dashed red;
+    width: 300px;
+    height: 200;
+    margin-top: 30px;
+    position: absolute;
+    top: 220px;
+    left: 205px;
+    color: white;
+}
+.zindex>img{
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+   top: 0;
+}
+
