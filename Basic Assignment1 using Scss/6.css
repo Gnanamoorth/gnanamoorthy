@@ -1,0 +1,101 @@
+header {
+  border-style: outset;
+  height: 70px;
+}
+header .logo {
+  padding-left: 6%;
+  margin-left: 19px;
+}
+header .nav_link_main {
+  float: right;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-decoration: none;
+  padding: 20px;
+  list-style: none;
+  margin-top: 5px;
+  margin-right: 130px;
+}
+header .nav_link_main > a {
+  padding: 3px;
+  color: #707070;
+}
+header .nav_link_main > a:link {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.Horizantalimage {
+  display: inline-flex;
+  list-style-type: none;
+  margin-top: 124px;
+  margin-left: -63px;
+}
+.Horizantalimage li img {
+  padding-left: 106px;
+  width: 130px;
+  height: 80px;
+}
+
+.Great_section {
+  display: flex;
+  margin-left: 21px;
+}
+.Great_section .wine {
+  width: 400px;
+  padding: 10px;
+  letter-spacing: 0px;
+  color: #707070;
+  margin-left: 20px;
+  margin-top: 22px;
+  line-height: 1.5;
+  font-size: smaller;
+}
+.Great_section img {
+  width: 450px;
+  height: 237px;
+  margin-top: 45px;
+  margin-left: 69px;
+}
+
+.last {
+  display: flex;
+  margin-top: 105px;
+}
+.last .coffe {
+  padding: 30px;
+  color: #707070;
+  margin-left: 40px;
+}
+.last .coffe .one {
+  width: 300px;
+}
+.last .coffe img {
+  width: 300px;
+}
+.last .pizza {
+  padding: 30px;
+  color: #707070;
+  margin-left: 40px;
+}
+.last .pizza .two {
+  width: 300px;
+}
+.last .pizza img {
+  width: 300px;
+}
+.last .burger {
+  padding: 30px;
+  color: #707070;
+  margin-left: 40px;
+}
+.last .burger .three {
+  width: 300px;
+}
+.last .burger img {
+  width: 300px;
+}
+.last #food {
+  line-height: 1.5;
+  font-size: smaller;
+}/*# sourceMappingURL=6.css.map */
