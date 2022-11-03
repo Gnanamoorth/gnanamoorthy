@@ -122,4 +122,10 @@
   .dot1{
     @extend .dot;
   }
- 
+  footer{
+    background-image: url(./Assets/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: 1410px 633px;
+    height: 500px;
+    width: 1350px;
+  }
