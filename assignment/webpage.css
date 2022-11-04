@@ -35,15 +35,15 @@ header ::placeholder {
   background-color: #FF0000;
 }
 
-.six {
+.three {
   color: #7C7C7C;
 }
 
-.five {
+.four {
   color: #1D1D1D;
 }
 
-.seven {
+.five {
   color: #434343;
 }
 
@@ -129,18 +129,21 @@ footer {
 
 .small h2 {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   color: #1E1C24;
+  margin-top: 5px;
 }
 .small p {
   color: #B1AAAA;
-  width: 119px;
+  width: 170px;
   font-weight: bold;
-  font-size: 6px;
+  font-size: 9px;
   text-align: center;
+  margin-top: 10px;
 }
 .small img {
-  width: 51px;
+  width: 60px;
   height: 54px;
   margin-left: 56px;
+  margin-left: 63px;
 }/*# sourceMappingURL=webpage.css.map */
