@@ -1,18 +1,29 @@
 * {
   font-family: "Montserrat";
-  margin: 0px;
-  padding: 0px;
 }
 
 header {
   background: url(./Assets/Header-bg.png);
   background-repeat: no-repeat;
-  background-size: 1410px 633px;
+  background-size: 1400px 633px;
   height: 665px;
   width: 1350px;
 }
 header .button-h {
-  font-size: 12px;
+  font-size: 13px;
+  background-color: #2E2E2E;
+}
+header ::-moz-placeholder {
+  color: black;
+  opacity: 1;
+}
+header :-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+header ::placeholder {
+  color: black;
+  opacity: 1;
 }
 
 .one {
@@ -24,20 +35,16 @@ header .button-h {
   background-color: #FF0000;
 }
 
-.three {
-  color: #B1AAAA;
-}
-
-.four {
-  color: #1E1C24;
-}
-
 .six {
   color: #7C7C7C;
 }
 
 .five {
   color: #1D1D1D;
+}
+
+.seven {
+  color: #434343;
 }
 
 .path27 {
@@ -51,9 +58,9 @@ header .button-h {
 }
 
 .card1 p {
-  width: 400px;
+  width: 420px;
   font-size: 15px;
-  margin-left: 20px;
+  margin-left: 25px;
   font-size: 12px;
   color: #2E2E2E;
   opacity: 1;
@@ -61,15 +68,15 @@ header .button-h {
 }
 .card1 h2 {
   width: 190px;
-  margin-left: 17px;
+  margin-left: 25px;
   color: #2E2E2E;
   opacity: 1;
   font-weight: 600;
   font-size: small;
 }
 
-.card2 img {
-  width: 634px;
+.card2 {
+  width: 800px;
   height: 427px;
 }
 
@@ -110,4 +117,30 @@ header .button-h {
 .dot, .dot1 {
   border-radius: 50%;
   display: inline-block;
+}
+
+footer {
+  background-image: url(./Assets/footer_bg.png);
+  background-repeat: no-repeat;
+  background-size: 1410px 633px;
+  height: 500px;
+  width: 1350px;
+}
+
+.small h2 {
+  font-weight: bold;
+  font-size: 15px;
+  color: #1E1C24;
+}
+.small p {
+  color: #B1AAAA;
+  width: 119px;
+  font-weight: bold;
+  font-size: 6px;
+  text-align: center;
+}
+.small img {
+  width: 51px;
+  height: 54px;
+  margin-left: 56px;
 }/*# sourceMappingURL=webpage.css.map */
