@@ -34,13 +34,13 @@
  .two{
     background-color: $color3;
  }
- .six{
+ .three{
     color: $color7;
  }
- .five{
+ .four{
     color:$color8;
  }
- .seven{
+ .five{
     color: $color9;
  }
  .path27 {
@@ -125,19 +125,23 @@
   .small{
     h2{
       font-weight: bold;  
-      font-size: 15px;
+      font-size: 16px;
       color: $color6;
+      margin-top: 5px;
     }
     p{
-        color: $color5;
-        width: 119px;
-        font-weight: bold;
-        font-size: 6px;
-        text-align: center;
+       color: $color5;
+       width: 170px;
+       font-weight: bold;
+       font-size: 9px;
+       text-align: center;
+       margin-top: 10px;
     }
     img{
-        width: 51px;
+        width: 60px;
         height: 54px;
         margin-left: 56px;
+        margin-left: 63px;
     }
   }
+  
