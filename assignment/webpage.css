@@ -26,7 +26,7 @@ header ::placeholder {
   opacity: 1;
 }
 
-.one {
+.colorone {
   color: #2E2E2E;
   opacity: 1;
 }
@@ -119,14 +119,6 @@ header ::placeholder {
   display: inline-block;
 }
 
-footer {
-  background-image: url(./Assets/footer_bg.png);
-  background-repeat: no-repeat;
-  background-size: 1410px 633px;
-  height: 500px;
-  width: 1350px;
-}
-
 .small h2 {
   font-weight: bold;
   font-size: 16px;
@@ -142,8 +134,18 @@ footer {
   margin-top: 10px;
 }
 .small img {
-  width: 60px;
-  height: 54px;
-  margin-left: 56px;
-  margin-left: 63px;
+  width: 70px;
+  height: 57px;
+}
+
+.conversion-blue img {
+  filter: sepia(100%) hue-rotate(90deg) saturate(900%);
+}
+
+footer {
+  background-image: url(./Assets/footer_bg.png);
+  background-repeat: no-repeat;
+  background-size: 1410px 633px;
+  height: 500px;
+  width: 1350px;
 }/*# sourceMappingURL=webpage.css.map */
