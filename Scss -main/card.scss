@@ -1,0 +1,113 @@
+@use "variable" as *;
+/* mixin */
+@mixin horizontal_main {
+    display: inline-flex;
+    list-style-type: none;
+    margin-top: 124px;
+    margin-left: -35px;
+    padding-left: 50px;
+}
+@mixin horizontal_image {
+    padding-left: 90px;
+    width: 130px;
+    height: 80px;
+}
+@mixin wine {
+    width: 440px;
+    padding: 10px;
+    margin-left: $margin_left;
+    margin-top: $margin_left;
+    line-height: $food_line;
+    font-size: $food_size;
+}
+@mixin wine_image {
+    width: 530px;
+    height: 250px;
+    margin-top: 45px;
+    margin-left: 77px;
+}
+@mixin border {
+    float: right;
+    opacity: 1;
+    text-decoration: none;
+    padding: $margin_left;
+    list-style: none;
+    margin-top: 5px;
+    margin-right: 140px;
+    font: normal normal normal 16px/24px Montserrat;
+}
+@mixin logo {
+    padding-left: 42px;
+    margin-left: 54px;
+}
+/* main_card */
+header {
+    border-style: $style_border;
+    height: 69px;
+    .logo {
+        @include logo;
+    }
+    .nav_link_main {
+        @include border;
+        a {
+            &:link {
+                text-decoration: none;
+                margin-right: 10px;
+            }
+            padding: 3px;
+            color: $color1;
+        }
+    }
+}
+.great_section {
+    display: $flex;
+    margin-left: $margin_left;
+    .wine {
+        @include wine;
+        color: $color1;
+    }
+    img {
+        @include wine_image;
+    }
+}
+.horizantalimage {
+    @include horizontal_main;
+    li {
+        img {
+            @include horizontal_image;
+        }
+    }
+}
+
+.last {
+    display: $flex;
+    margin-top: 100px;
+    margin-left: 60px;
+    img {
+        width: $width_of_image;
+    }
+    .coffe {
+        color: $color1;
+        margin-left: $margin_of_coffe ;
+    }
+    .pizza {
+        @extend.coffe;
+
+    }
+    .burger {
+        @extend .coffe;
+    }
+    .one {
+        width: $width_of_last;
+    }
+    .two {
+        @extend .one;
+    }
+    .three {
+        @extend .one
+    }
+    #food {
+        line-height: $food_line;
+        font-size: $food_size;
+    }
+}
