@@ -12,58 +12,46 @@ $width: 750px;
 * {
    font-family: 'Montserrat';
 }
-
 header {
    background: url(./Assets/Header-bg.png);
    background-repeat: no-repeat;
    background-size: 1394px 633px;
    height: 665px;
    width: 1350px;
-
    .button-h {
       font-size: 13px;
       background-color: $color;
    }
-
    ::placeholder {
       color: black;
       opacity: 1;
    }
 }
-
 .colorone {
    color: $color;
    opacity: 1;
 }
-
 .two {
    background-color: $color3;
 }
-
 .three {
    color: $color7;
 }
-
 .four {
    color: $color8;
 }
-
 .five {
    color: $color9;
 }
-
 .path27 {
    position: relative;
 }
-
 .path28 {
    position: absolute;
    margin-top: 14px;
    margin-left: 8px;
 }
-
 .card1 {
-
    p {
       width: 420px;
       font-size: 15px;
@@ -72,9 +60,7 @@ header {
       color: $color;
       opacity: 1;
       margin-top: 10px;
-
    }
-
    h2 {
       width: 190px;
       margin-left: 25px;
@@ -84,18 +70,15 @@ header {
       font-size: small;
    }
 }
-
 .card2 {
    width: 800px;
    height: 427px;
 }
-
 .card3 {
    background-color: $color2;
    opacity: 1;
    width: 530px;
    height: 260px;
-
    p {
       margin-left: 19px;
       font-size: small;
@@ -104,38 +87,31 @@ header {
       line-height: 25px;
    }
 }
-
 .card4 {
    background-color: $color3;
    opacity: 1;
    @extend .card3;
 }
-
 .card5 {
    height: 500px;
 }
-
 .section2 {
    background-color: $color4;
    opacity: 1;
 }
-
 .section3 {
    background-color: $color4;
    opacity: 1;
    height: 400px;
 }
-
 .dot {
    @extend .two;
    border-radius: 50%;
    display: inline-block;
 }
-
 .dot1 {
    @extend .dot;
 }
-
 .small {
    h2 {
       font-weight: bold;
@@ -143,7 +119,6 @@ header {
       color: $color6;
       margin-top: 5px;
    }
-
    p {
       color: $color5;
       width: 170px;
@@ -152,19 +127,16 @@ header {
       text-align: center;
       margin-top: 10px;
    }
-
    img {
       width: 70px;
       height: 57px;
    }
 }
-
 .conversion-blue {
    img {
       filter: sepia(100%) hue-rotate(90deg) saturate(900%);
    }
 }
-
 footer {
    background-image: url(./Assets/footer_bg.png);
    background-repeat: no-repeat;
@@ -179,37 +151,29 @@ footer {
    body {
       max-width: $width;
       margin: auto;
-
       header {
          .head2 {
             margin-top: 70px;
             margin-left: 109px;
-
             h1 {
                font-size: 23px;
             }
          }
-
          .head {
             justify-content: start;
             border: outset 2px;
-
             nav {
                button {
                   margin-left: 78px;
                }
-
                margin-left: 81px;
                margin-top: 15px;
                margin-right: 0px;
             }
-
             nav ul li a {
                padding-right: 20px;
             }
-
             .head-image {
-
                img {
                   width: 80px;
                   height: 20px;
@@ -218,13 +182,11 @@ footer {
                }
             }
          }
-
          background: none;
          background-color:$color3;
          height: 350px;
          width: $width;
       }
-
       .parthead {
         max-width: $width;
          margin-right: auto;
@@ -233,7 +195,6 @@ footer {
             margin-left: 588px;
          }
       }
-
       .part1 {
          display: inline-block;
 
@@ -242,30 +203,24 @@ footer {
             height: 330px;
          }
       }
-
       .part2 {
          .card4 {
             margin-top: 28px;
          }
-
          display: inline-block;
          margin-top: 50px;
          padding-left: 30px;
       }
-
       .part3 {
          display: grid;
          grid-template-columns: auto auto;
-
          .part3-2 {
             margin-top: -85px;
          }
-
          .card5 {
             margin-bottom: 10px;
          }
       }
-
       .part4 {
          display: inline-block;
 
@@ -274,34 +229,27 @@ footer {
             margin-top: -25px;
          }
       }
-
       .ptag {
          display: none;
       }
-
       .part5 {
          display: grid;
          grid-template-columns: auto auto auto;
       }
-
       .part7 {
          margin-left: 0px;
       }
-
       footer {
          background: none;
          background-color: $color3;
          height: auto;
          width: $width;
-
          .footer1 {
             display: grid;
-
             .footer2 {
                margin-top: 10px;
                text-align: center;
             }
-
             nav {
                margin-top: 10px;
                text-align: center;
