@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+    <link rel="stylesheet" href="js.css">
+    <script src="./js.js"></script>
+    
+</head>
+<body>
+    <div>
+        <p id="script">my name is.</p>
+        <button type="button" onclick="hello()">Try it</button>
+        <button onclick="window.print()">Print this page</button>
+        <button onclick="alert_fn()">Button</button>
+    </div>
+        <p id="adding"></p>
+        <script>
+            document.getElementById("adding").innerHTML=(6+5.60) * 10 /10 - .6;
+        </script>
+        <script>
+        console.log(5+6);
+        </script>
+        <div>
+        <a id="sampleAnchor" target="_blank" href="http://www.bitdegree.org">BitDegree</a>
+        <button onclick="sampleFunction()">Change link</button>
+        </div>  
+        <div>
+            <p id="date" onclick="times()" > click to view the date</p>
+        </div>
+        <button type="button" onclick="document.write(5+6)">click</button>
+        <p id="statement"></p>
+        <script>
+            var x,y,z;x=10; y=10; z=x+y;
+            document.getElementById("statement").innerHTML="the value of z is "+z;
+        </script>
+        <p id="expression"></p>
+        <p id="adder"></p>
+        <p id="constant"></p>
+        <script>
+            var x;
+            x=10;
+            document.getElementById("expression").innerHTML= x * 10;
+            document.getElementById("adder").innerHTML=x /5
+             value1=100;
+            value2=133;
+            value3=111;
+            var total=value1+value2+value3;
+            document.getElementById("constant").innerHTML="the total value o the pricess is"+" "+ total;
+        </script>
+        <!-- var-let_variables -->
+        <div>
+            <p id="let-variable"></p>
+            <button  onclick=" let_variable()"> values </button>
+            <p id="var-variable"></p>
+            <button  onclick="var_variable ()"> values </button>
+        </div>
+        <!-- const_variable and array ,object -->
+        <div>
+            <p id="const"></p>
+            <p id="const_object"></p>
+            <script>
+                const cars=["rr","bmw","audi","benz"]
+                cars[0]="toyato";
+                cars.push("mg");
+                document.getElementById("const").innerHTML=cars;
+                /* const-object */
+                const car={name:"BMW",model:"2022",rating:"10"};
+                document.getElementById("const_object").innerHTML="the car name is"+ " "+ car.name+ " "+ "and model of car"+" "+car.model;
+            </script>
+        </div>
+        <!-- operatores -->
+        <div>
+            <p
+            id="arithmetic"></p>
+            <script>
+            var x =( 100 + 50)**2 /20%10;
+            x++;
+            x--;
+            z=x;
+            y=Math.pow(z,2)
+                document.getElementById("arithmetic").innerHTML=y;
+            </script>
+        </div>
+        <div>
+            <p id="assignment"></p>
+            <script>
+                var x=10;
+                x+=5;
+                z=x-=5
+                b=x**=2
+                c=x/=2
+                y="hello";
+                y+="world"
+                document.getElementById("assignment").innerHTML=x+"</br>" +y+"</br>"+z+"</br>"+b+"</br>"+c;
+            </script>
+        </div>
+        <!-- data_types -->
+        <div>
+            <p id="booleans"></p>
+            <script>
+                x=10;
+                y=15;
+                z=10;
+                document.getElementById("booleans").innerHTML=(x==y)+"<br>"+(x==z)+"<br>"+typeof x;
+            </script>
+        </div>
+        <!-- functions -->
+        <div>
+            <p id="functions"></p>
+            <script>
+                function myFunction(a1,a2){
+                    return a1*a2;
+                }
+                document.getElementById("functions").innerHTML=myFunction(2,4)
+            </script>
+        </div>
+</body>
+</html>
