@@ -13,8 +13,8 @@
 
 <body>
     <div>
-        <p id="script">my name is.</p>
-        <button type="button" onclick="hello()">Try it</button>
+        <p id="stylesheet">my name is.</p>
+        <button onclick="hfirst_js()">Try it</button>
         <button onclick="window.print()">Print this page</button>
         <button onclick="alert_fn()">Button</button>
     </div>
@@ -277,6 +277,91 @@
     <div>
         <button onclick="sets()">set-values</button>
         <p id="set"></p>
+    </div>
+    <!-- ternary operator -->
+    <div>
+        <button onclick="ternary_operator()">Ternary operator</button>
+        <p id="ternary"></p>
+        <script>
+             function facebook() {
+    document.getElementById("ternary").innerHTML="welcome";
+  }
+  function twitter() {
+    document.getElementById("ternary").innerHTML="Login to social media"
+  }
+  let authenticate=true;
+  authenticate ? facebook(): twitter();
+        </script>
+    </div>
+    <!-- nested ternary -->
+    <div>
+        <p id="nested_ternary"></p>
+        <script>
+             a=3;
+             result = (a>= 0) ? (a == 0? "zero": "positive"): "negative"
+             document.getElementById("nested_ternary").innerHTML= result;
+        </script>
+    </div>
+    <!-- spread operator -->
+    <div>
+        <script>
+            arr1=[1,2,4,5];
+            arr2=[...arr1,3,6,8,9];
+            arr=[...arr1,...arr2]
+            arr1.push(7);
+            console.log(arr1);
+            console.log(arr2);
+            console.log(arr);
+        </script>
+        <!-- spread in object -->
+        <script>
+            const human1 = {
+                fname:'guru gnana sambanthan',
+                age:44
+            };
+            const human2= {...human1};
+            console.log(human2)
+            console.log(human1)
+
+            let func = function (...args){
+                console.log(args)
+            }
+            func(3);
+            func(2,1,2,3,4,5,6,7);
+
+            function sum(x,y,z) {
+                console.log(x+y+z);
+            }
+            const num=[1,2,3,4,5,6]
+            sum(...num);
+        </script>
+    </div>
+    <!-- arrow function -->
+    <div>
+        <p id="arrow"></p>
+        <script>
+            hello="";
+            hello= () => a+b;
+            const a=10;
+            const b=10;
+            document.getElementById("arrow").innerHTML=hello();
+
+            const materiales =[
+                "charcol",
+                "gold",
+                "silver",
+                "diamond"
+            ];
+            console.log(materiales.map(material =>material.length));
+        </script>
+    </div>
+    <div>
+        <p id="modu"></p>
+            <script type="module">
+            import {greetPerson as news } from './message.js';
+            let displayName = news('Jack');
+            document.getElementById("modu").innerHTML = displayName;
+            </script>
     </div>
 </body>
 </html>

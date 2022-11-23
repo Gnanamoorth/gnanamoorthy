@@ -1,22 +1,22 @@
-function hello(){
-    document.getElementById("script").innerHTML = "gnanamoorthy.";
-    document.getElementById("script").style.fontSize="35px";
-    document.getElementById("script").style.color="red";
-    document.getElementById("script").style.fontWeight="bold";
-    document.getElementById("script").style.textAlign="center";
-    document.getElementById("script").style.margin="10px";
-    document.getElementById("script").style.padding="10px";
-    document.getElementById("script").style.border="1px solid black";
-    document.getElementById("script").style.background="black";
-    document.getElementById("script").style.borderRadius="5px";
-    document.getElementById("script").style.outline="1px solid black";
-    document.getElementById("script").style.boxShadow="2px 2px 2px black";
-    document.getElementById("script").style.MozBoxShadow="2px 2px 2px";
-    document.getElementById("script").style.WebkitBoxShadow="2px 2px 2px";
-    document.getElementById("script").style.MozBoxShadow="2px 2px 2px";
-    document.getElementById("script").style.WebkitBoxShadow="2px 2px 2px";
-    document.getElementById("script").style.boxShadow="2px 2px 2px";
-    document.getElementById("script").style.textShadow="2px 2px 2px";
+function hfirst_js(){
+    document.getElementById("stylesheet").innerHTML = "Gnanamoorthy.V";
+    document.getElementById("stylesheet").style.fontSize="35px";
+    document.getElementById("stylesheet").style.color="red";
+    document.getElementById("stylesheet").style.fontWeight="bold";
+    document.getElementById("stylesheet").style.textAlign="center";
+    document.getElementById("stylesheet").style.margin="10px";
+    document.getElementById("stylesheet").style.padding="10px";
+    document.getElementById("stylesheet").style.border="1px solid black";
+    document.getElementById("stylesheet").style.background="black";
+    document.getElementById("stylesheet").style.borderRadius="5px";
+    document.getElementById("stylesheet").style.outline="1px solid black";
+    document.getElementById("stylesheet").style.boxShadow="2px 2px 2px black";
+    document.getElementById("stylesheet").style.MozBoxShadow="2px 2px 2px";
+    document.getElementById("stylesheet").style.WebkitBoxShadow="2px 2px 2px";
+    document.getElementById("stylesheet").style.MozBoxShadow="2px 2px 2px";
+    document.getElementById("stylesheet").style.WebkitBoxShadow="2px 2px 2px";
+    document.getElementById("stylesheet").style.boxShadow="2px 2px 2px";
+    document.getElementById("stylesheet").style.textShadow="2px 2px 2px";
 }
   function prints(){
     window.getElementById(pri).print
@@ -56,6 +56,7 @@ function hello(){
     }
     document.getElementById("var-variable").innerHTML = z;
   }
+  /* loop */
 function loop() {
   let text="";
   for (let i = 0; i < 10; i++) {
@@ -124,3 +125,13 @@ function sets() {
  }
  document.getElementById("set").innerHTML=letters.size +"<br>"+txt+" "+letters.values()+"<br>"+text1;
 }
+/* ternary operator */
+function ternary_operator() {
+  let age=18;
+  let result=
+  (age >= 18) ? "your eligble to this site" : "your not eligble to this site";
+  document.getElementById("ternary").innerHTML=result;
+}
+
+
+
