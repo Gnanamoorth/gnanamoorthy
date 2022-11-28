@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script src="./js-impor.js"></script>
+</head>
+
+<body>
+    <!-- array -->
+    <div>
+        <p id="array"></p>
+        <button onclick="array_func()">Array Function</button>
+        <div>
+            <p id="array-foreach"></p>
+            <button onclick="array_for()">Arrays Function</button>
+        </div>
+        <div>
+            <p id="map"></p>
+            <button onclick="maping()">Map</button>
+        </div>
+    </div>
+    <!-- functions call -->
+    <div>
+        <p id="caling"></p>
+        <p id="calings"></p>
+        <button onclick="call_function()">call Function</button>
+        <p id="testing"></p>
+    </div>
+    <div>
+        <p id="call"></p>
+        <button onclick="call_back()">Call Back Function</button>
+    </div>
+    <div>
+        <p id="call_fn"></p>
+        <button onclick="main_function()">call function2</button>
+        <p id="settime"></p>
+        <script>
+            setTimeout(function () { settime("gnanamooerthy"); }, 3000)
+            function settime(value) {
+                document.getElementById("settime").innerHTML = value;
+            }
+        </script>
+        <div>
+            <p id="settimeinterval"></p>
+            <button onclick="timeintervel()">timeinterval</button>
+        </div>
+        <div>
+            <p id="promise"></p>
+            <button onclick="myleveljs()">promise</button>
+        </div>
+        <div>
+            <p id="promise-timedelay"></p>
+            <button onclick="promise_time()">promise to use settime</button>
+        </div>
+    </div>
+</body>
+
+</html>

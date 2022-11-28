@@ -172,7 +172,7 @@
                 case 3:
                     day = "Wednesday";
                     break;
-                 case 4:
+                case 4:
                     day = "Tuesday";
                     break;
                 case 5:
@@ -190,24 +190,24 @@
         <p id="if_fnt"></p>
         <p id="else_if"></p>
         <script>
-            if (new Date().getHours()>10) {
-                document.getElementById("if_fnt").innerHTML="Good Afternoon"
+            if (new Date().getHours() > 10) {
+                document.getElementById("if_fnt").innerHTML = "Good Afternoon"
             }
             else {
-                document.getElementById("if_fnt").innerHTML="Good Morning"
+                document.getElementById("if_fnt").innerHTML = "Good Morning"
             }
             /* else_if */
-            let month= new Date().getMonth();
+            let month = new Date().getMonth();
             let greeating;
-            if (month>10) {
-               greeating="hello" 
-            }  else if(month>9){
-                greeating="welcome"
+            if (month > 10) {
+                greeating = "hello"
+            } else if (month > 9) {
+                greeating = "welcome"
             }
-            else{
-                greeating="finished"
+            else {
+                greeating = "finished"
             }
-            document.getElementById("else_if").innerHTML=greeating;
+            document.getElementById("else_if").innerHTML = greeating;
         </script>
     </div>
     <!-- for_loop -->
@@ -222,45 +222,45 @@
     </div>
     <!-- for- each-loop -->
     <div>
-    <p id="eachloop1"></p>
-    <p id="eachloop2"></p>
-     <script>
-    const mark =[40,50,60,70,100];
+        <p id="eachloop1"></p>
+        <p id="eachloop2"></p>
+        <script>
+            const mark = [40, 50, 60, 70, 100];
 
-    let txt="";
-    mark.forEach(myFunction1,myFunction2 );
-    document.getElementById("eachloop1").innerHTML=txt;
-    document.getElementById("eachloop2").innerHTML=txt;
-  
-    function myFunction1 (value) {
-        txt += value + "<br>";
-    }
-     function myFunction2 (value) {
-      txt +=  value + "<br>";
-    }
-    </script>
-    <!-- for_of_loop -->
-    <p id="of_loop"></p>
-    <script>
-        const cars_info=["tata-nissa","2022","17laksh"];
-        texts="";
-        for (let x of cars_info){
-            texts +=x+" ";
-        }
-        document.getElementById("of_loop").innerHTML=texts;
-    </script>
+            let txt = "";
+            mark.forEach(myFunction1, myFunction2);
+            document.getElementById("eachloop1").innerHTML = txt;
+            document.getElementById("eachloop2").innerHTML = txt;
+
+            function myFunction1(value) {
+                txt += value + "<br>";
+            }
+            function myFunction2(value) {
+                txt += value + "<br>";
+            }
+        </script>
+        <!-- for_of_loop -->
+        <p id="of_loop"></p>
+        <script>
+            const cars_info = ["tata-nissa", "2022", "17laksh"];
+            texts = "";
+            for (let x of cars_info) {
+                texts += x + " ";
+            }
+            document.getElementById("of_loop").innerHTML = texts;
+        </script>
     </div>
     <!-- while_loop -->
     <div>
         <p id="while"></p>
         <script>
-            let message="";
-            let i=5;
-            while (i<10) {
-                message += "the nummbers is"+" "+ i +"<br>";
+            let message = "";
+            let i = 5;
+            while (i < 10) {
+                message += "the nummbers is" + " " + i + "<br>";
                 i++;
             }
-            document.getElementById("while").innerHTML =message;
+            document.getElementById("while").innerHTML = message;
         </script>
     </div>
     <!-- do while -->
@@ -283,31 +283,31 @@
         <button onclick="ternary_operator()">Ternary operator</button>
         <p id="ternary"></p>
         <script>
-             function facebook() {
-    document.getElementById("ternary").innerHTML="welcome";
-  }
-  function twitter() {
-    document.getElementById("ternary").innerHTML="Login to social media"
-  }
-  let authenticate=true;
-  authenticate ? facebook(): twitter();
+            function facebook() {
+                document.getElementById("ternary").innerHTML = "welcome";
+            }
+            function twitter() {
+                document.getElementById("ternary").innerHTML = "Login to social media"
+            }
+            let authenticate = true;
+            authenticate ? facebook() : twitter();
         </script>
     </div>
     <!-- nested ternary -->
     <div>
         <p id="nested_ternary"></p>
         <script>
-             a=3;
-             result = (a>= 0) ? (a == 0? "zero": "positive"): "negative"
-             document.getElementById("nested_ternary").innerHTML= result;
+            a = 3;
+            result = (a >= 0) ? (a == 0 ? "zero" : "positive") : "negative"
+            document.getElementById("nested_ternary").innerHTML = result;
         </script>
     </div>
     <!-- spread operator -->
     <div>
         <script>
-            arr1=[1,2,4,5];
-            arr2=[...arr1,3,6,8,9];
-            arr=[...arr1,...arr2]
+            arr1 = [1, 2, 4, 5];
+            arr2 = [...arr1, 3, 6, 8, 9];
+            arr = [...arr1, ...arr2]
             arr1.push(7);
             console.log(arr1);
             console.log(arr2);
@@ -316,23 +316,23 @@
         <!-- spread in object -->
         <script>
             const human1 = {
-                fname:'guru gnana sambanthan',
-                age:44
+                fname: 'guru gnana sambanthan',
+                age: 44
             };
-            const human2= {...human1};
+            const human2 = { ...human1 };
             console.log(human2)
             console.log(human1)
 
-            let func = function (...args){
+            let func = function (...args) {
                 console.log(args)
             }
             func(3);
-            func(2,1,2,3,4,5,6,7);
+            func(2, 1, 2, 3, 4, 5, 6, 7);
 
-            function sum(x,y,z) {
-                console.log(x+y+z);
+            function sum(x, y, z) {
+                console.log(x + y + z);
             }
-            const num=[1,2,3,4,5,6]
+            const num = [1, 2, 3, 4, 5, 6]
             sum(...num);
         </script>
     </div>
@@ -340,28 +340,30 @@
     <div>
         <p id="arrow"></p>
         <script>
-            hello="";
-            hello= () => a+b;
-            const a=10;
-            const b=10;
-            document.getElementById("arrow").innerHTML=hello();
+            hello = "";
+            hello = () => a + b;
+            const a = 10;
+            const b = 10;
+            document.getElementById("arrow").innerHTML = hello();
 
-            const materiales =[
+            const materiales = [
                 "charcol",
                 "gold",
                 "silver",
                 "diamond"
             ];
-            console.log(materiales.map(material =>material.length));
+            console.log(materiales.map(material => material.length));
         </script>
     </div>
+    <!-- modules -->
     <div>
         <p id="modu"></p>
-            <script type="module">
-            import {greetPerson as news } from './message.js';
-            let displayName = news('Jack');
+        <script type="module">
+            import { greetPerson as news } from './message.js';
+            let displayName = news('Jackson');
             document.getElementById("modu").innerHTML = displayName;
-            </script>
+        </script>
     </div>
 </body>
+
 </html>
