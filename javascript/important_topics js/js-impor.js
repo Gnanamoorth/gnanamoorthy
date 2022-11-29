@@ -3,7 +3,7 @@ function array_func() {
   /* add */
   cars[0] = "Ford"
   /* push */
-  cars.push("musk");
+  cars.push("musk","Tata");
   /* poo */
   cars.pop("");
   /* array using for-loop */
@@ -37,7 +37,7 @@ function array_for() {
   delete cars[1];
   let txt = "<ul>";
   cars.forEach(myFunctions);
-  document.getElementById("array-foreach").innerHTML = txt + "<br>" + cars.toString() + "<br>" + cars.join("*") + "<br>" + combine + "<br>" + slice + "<br>" + person + "<br>" + marks[0];
+  document.getElementById("array-foreach").innerHTML = txt + "<br>" + cars.toString() + "<br>" + cars.join("*") + "<br>" + combine + "<br>" + slice + "<br>" + person + "<br>" + marks;
   txt = "</ul>";
   function myFunctions(value) {
     txt += "<li>" + value + "</li>";
@@ -141,7 +141,7 @@ function myleveljs() {
   let myPromise = new Promise(function (myResolve, myReject) {
     let x = 0;
 
-    if (x == 0) {
+    if (x == 1) {
       myResolve ("ok");
     }
     else {
@@ -163,3 +163,81 @@ myPromise.then(function(value) {
   document.getElementById("promise-timedelay").innerHTML = value;
 });
 }
+/* class */
+function clas_fn() {
+  class car{
+    constructor(name,year){
+      this.names=name;
+      this.years=year;
+    }
+    age(){
+      let dates=new Date();
+      return dates.getFullYear()-this.years;
+    }
+  }
+  const mycar=new car("ford",2000); 
+  const mycar2=new car("TATA",2021);
+  document.getElementById("class").innerHTML=mycar.names+" "+mycar.age() +"<br>"+Object.values(mycar2);
+}
+/* class using extend */
+function exten (){
+  class person{
+    constructor(name,year){
+      this.name = name;
+      this.year = year;
+    }
+    present(){
+      return this.name+this.year;
+    }
+  }
+  class person2 extends person{
+    constructor(name,year,gender){
+      super(name,year);
+      this.gender=gender;
+    }
+    show(){
+      return this.present()+this.gender
+    }
+  }
+  let myperson=new person2 ("gnanamoorthy",2001,"male")
+ document.getElementById("extent").innerHTML=myperson.show();
+}
+/* get and set method */
+
+class office {
+  constructor(f,l,e,a){
+    this.firstName=f;
+    this.lastName=l;
+    this.email=e;
+    this.age=a;
+  }
+  get display(){
+    return [this.firstName, this.lastName,this.email,this.age];
+  }
+  set emails (value){
+    this.email=value;
+  }
+  set lastName_change(value){
+    this.lastName=value;
+  }
+}
+let offices=new office("gnana","moorhy","xyz@gmail.com",21)
+console.log(offices.display);
+offices.emails="moorthygnana@1234gmail.com";
+console.log(offices.display);
+offices.lastName_change="vel";
+console.log(offices.display+typeof(offices));
+
+class google{
+  constructor(h){
+    this.h=h;
+    this.w=h;
+  }
+  static create(a,b){
+    return  a===b;
+  }
+}
+let chromes =new google(1);
+let yooho =new google(4);
+console.log(google.create(chromes,yooho));
+
